@@ -24,6 +24,8 @@
              "hatvan", "hetven", "nyolcvan", "kilencven"]
             ];
             
+            let kodic = ["", "십", "백", "천", "만", "백만", "천만", "억"];
+            
             function convert() {
                 input = numberIn.value;
                 resultP.innerText = `${input}, azaz ${result}`;
