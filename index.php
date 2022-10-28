@@ -16,6 +16,10 @@
             const numberIn = document.getElementById("numberIn");
             const submitBtn = document.getElementById("submitBtn");
             const resultP = document.getElementById("resultP");
+            /* Korean numbers */
+            let kon = ["", "일", "이", "삼", "사", "오", "육", "칠", "팔", "구"];
+            /* Powers of Ten in Korean */
+            let kop = ["", "십", "백", "천", "만"];
             
             let dic = [
             ["", "egy", "kettő", "három", "négy", "öt", "hat", "hét",
@@ -29,6 +33,10 @@
             
             function convert() {
                 input = numberIn.value;
+                let a = input.toString();
+                for (i = a.length-1, j = 0; i >= 0, j < a.length; i--, j++) {
+                    result += kon[a[j]] + kop[i];
+                }
                 resultP.innerText = `${input}, azaz ${result}`;
             }
         </script>
