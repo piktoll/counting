@@ -21,7 +21,8 @@
             ["", "egy", "kettő", "három", "négy", "öt", "hat", "hét",
             "nyolc", "kilenc"],
             ["", "tíz", "húsz", "harminc", "negyven", "ötven",
-             "hatvan", "hetven", "nyolcvan", "kilencven"]
+             "hatvan", "hetven", "nyolcvan", "kilencven"],
+            ["", "", "száz", "ezer"]
             ];
             
             let kodic = ["", "십", "백", "천", "만", "백만", "천만", "억"];
