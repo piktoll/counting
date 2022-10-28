@@ -19,7 +19,7 @@
             /* Korean numbers */
             let kon = ["", "일", "이", "삼", "사", "오", "육", "칠", "팔", "구"];
             /* Powers of Ten in Korean */
-            let kop = ["", "십", "백", "천", "만"];
+            let kop = ["", "십", "백", "천", "만", "십", "백", "천", "억", "십", "백", "천", "조"];
             
             let dic = [
             ["", "egy", "kettő", "három", "négy", "öt", "hat", "hét",
@@ -29,13 +29,14 @@
             ["", "", "száz", "ezer"]
             ];
             
-            let kodic = ["", "십", "백", "천", "만", "백만", "천만", "억"];
-            
             function convert() {
                 input = numberIn.value;
                 let a = input.toString();
                 for (i = a.length-1, j = 0; i >= 0, j < a.length; i--, j++) {
-                    result += kon[a[j]] + kop[i];
+                    result += kon[a[j]];
+                    if (a[j] != 0) {
+                        result += kop[i];
+                    }
                 }
                 resultP.innerText = `${input}, azaz ${result}`;
             }
