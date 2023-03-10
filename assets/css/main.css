@@ -2,12 +2,16 @@
     --primary: #b3c;
     --white: #fff;
     --primary-light: #ebe;
+    --coal: #333;
+
+    --light-radius: 0.6rem;
 }
 
 * {
     box-sizing: border-box;
     text-align: center;
     font-family: sans-serif;
+    color: var(--coal);
 }
 
 body {
@@ -22,18 +26,18 @@ button {
     padding: 1rem 2rem;
     background: var(--primary);
     color: var(--white);
-    border-radius: 0.5rem;
-    border: 0px solid var(--white);
+    border-radius: var(--light-radius);
+    border: 0rem solid var(--white);
 }
 
-#numberIn {
+#number-el {
     box-sizing: border-box;
     border: 0.05rem solid var(--primary);
     padding: 1rem 0rem;
-    border-radius: 0.5rem;
+    border-radius: var(--light-radius);
 }
 
-#resultP {
+#result-el {
     padding: 1rem;
     background: var(--primary-light);
 }
